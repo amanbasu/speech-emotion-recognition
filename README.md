@@ -22,11 +22,11 @@ The model was trained for 500 epochs and after which the curve almost reached a 
 
 Adding dropout reduced the overfitting of the model and increased its overall accuracy. The model showed an unweighted accuracy across six emotions of 45% with the validation accuracy of 42%.
 
-![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_dropout.png)
-Fig 1. Model plot without dropout
+![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_dropout.png) \\
+Fig 1. Model plot with dropout of 0.2
 
-![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_no_dropout.png)
-Fig 2. Model plot with dropout of 0.2
+![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_no_dropout.png) \\
+Fig 2. Model plot without dropout
 
 
 
