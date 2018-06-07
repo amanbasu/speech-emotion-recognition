@@ -14,5 +14,16 @@ To convert data into a consistent shape we have applied Bucket Padding. The data
 For selecting a batch, a bucket is chosen at random containing sorted data, out of that bucket contiguous examples equal to the batch size are chosen. The examples are padded to the shape of maximum sequence length and then shuffled. This gives the desired batch.
 the code for bucket iterator is taken from [R2RT](https://r2rt.com/recurrent-neural-networks-in-tensorflow-iii-variable-length-sequences.html)
 
+#### Model
+We used two layers of Bidirectional LSTM followed by attention in the last layer. The batch size was kept as 128 with the learning rate of 1e-4.
+
+#### Results
+The model was trained for 500 epochs and after which the curve almost reached a plateau. The model showed overfitting when the dropout was not used. We then applied a dropout of keep probability 0.8 between the last LSTM layer and the output layer.
+
+Adding dropout reduced the overfitting of the model and increased its overall accuracy. The model showed an unweighted accuracy across six emotions of 45% with the validation accuracy of 42%.
+
+
+
+
 
 
