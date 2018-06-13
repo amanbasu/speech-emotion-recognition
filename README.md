@@ -7,7 +7,7 @@ In this project we will use Mel frequency cepstral coefficients (MFCC) to train 
 the link for the same can be found [here](http://sail.usc.edu/iemocap/)
 
 #### The dataset
-The IEMOCAP database consists of 10 emotions. We selected the major 6 emotions viz. angry, neutral, frustrated, sad, excited and happy, in our training set. Features extracted from the raw audio of all sessions were saved along with their length and emotion.
+The IEMOCAP database consists of 10 emotions. We selected the major 6 emotions viz. angry, neutral, frustrated, sad, excited and happy, in our training set. Features extracted from the raw audio of all sessions were saved along with their length and emotion. We used the first 20 mfcc coefficients as the feature vector, the process can be found in [notebook](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/create_mfcc.ipynb)
 
 To convert data into a consistent shape we have applied Bucket Padding. The data is first sorted according to their sequence lengths and then divided into a specific number of buckets. The length of data thus divided is in close range of each other which eliminates extra padding. This method is used in Bucket Iterator which is used to get the batch if desired examples.
 
