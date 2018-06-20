@@ -80,10 +80,10 @@ num_mfcc_features = 32
 rnn_size = 64
 dropout = 0.8
 # tr_acc, te_acc, tr_loss, te_loss = [], [], [], []
-# tr_acc = np.load('drive/colab_notebooks/temp_32_att_mod/tr_acc.npy')
-# tr_loss = np.load('drive/colab_notebooks/temp_32_att_mod/tr_loss.npy')
-# te_acc = np.load('drive/colab_notebooks/temp_32_att_mod/te_acc.npy')
-# te_loss = np.load('drive/colab_notebooks/temp_32_att_mod/te_loss.npy')
+# tr_acc = np.load('tr_acc.npy')
+# tr_loss = np.load('tr_loss.npy')
+# te_acc = np.load('te_acc.npy')
+# te_loss = np.load('te_loss.npy')
 
 # resets tensorflow graph
 def reset_graph():
@@ -149,6 +149,7 @@ def rnn_model():
     cell_bw = rnn.MultiRNNCell(cells=stacked_rnn_bw, state_is_tuple=True)
     rnn_outputs, final_state_fw, final_state_bw = stack_bidirectional_dynamic_rnn([cell_fw], [cell_bw], x, dtype=tf.float32, sequence_length=seq_length)
     print(rnn_outputs.shape)
+    
     '''
     # single RNN layer
     lstm_fw_cell = rnn_cell.BasicLSTMCell(rnn_size)
@@ -198,13 +199,13 @@ def train_model(graph):
         sess.run(tf.global_variables_initializer())
         
         saver = tf.train.Saver()
-#         saver = tf.train.import_meta_graph('drive/colab_notebooks/temp_32_att/weights_epoch_{0}.ckpt.meta'.format(init_epoch))
-#         saver.restore(sess, 'drive/colab_notebooks/temp_32_att/weights_epoch_{0}.ckpt'.format(init_epoch))
+#         saver = tf.train.import_meta_graph('tmp/weights_epoch_{0}.ckpt.meta'.format(init_epoch))
+#         saver.restore(sess, 'tmp/weights_epoch_{0}.ckpt'.format(init_epoch))
         
-#         tr_acc = np.load('drive/colab_notebooks/temp_32_att/train_accuracy.npy')
-#         tr_loss = np.load('drive/colab_notebooks/temp_32_att/train_loss.npy')
-#         te_acc = np.load('drive/colab_notebooks/temp_32_att/test_accuracy.npy')
-#         te_loss = np.load('drive/colab_notebooks/temp_32_att/test_loss.npy')
+#         tr_acc = np.load('tmp/train_accuracy.npy')
+#         tr_loss = np.load('tmp/train_loss.npy')
+#         te_acc = np.load('tmp/test_accuracy.npy')
+#         te_loss = np.load('tmp/test_loss.npy')
         
         tr_acc, te_acc, tr_loss, te_loss = [], [], [], []
 
