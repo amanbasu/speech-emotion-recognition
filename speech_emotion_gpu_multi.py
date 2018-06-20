@@ -108,10 +108,10 @@ layer = {'weight':tf.Variable(tf.random_normal([rnn_size*2, n_classes])),
         'bias':tf.Variable(tf.random_normal([n_classes]))}
 
 # tr_acc, te_acc, tr_loss, te_loss = [], [], [], []
-# tr_acc = np.load('drive/colab_notebooks/temp_32_att_mod/tr_acc.npy')
-# tr_loss = np.load('drive/colab_notebooks/temp_32_att_mod/tr_loss.npy')
-# te_acc = np.load('drive/colab_notebooks/temp_32_att_mod/te_acc.npy')
-# te_loss = np.load('drive/colab_notebooks/temp_32_att_mod/te_loss.npy')
+# tr_acc = np.load('tr_acc.npy')
+# tr_loss = np.load('tr_loss.npy')
+# te_acc = np.load('te_acc.npy')
+# te_loss = np.load('te_loss.npy')
 
 # model graph
 def feed_forward(inputs, seq_length):
