@@ -33,8 +33,8 @@ Fig 1. Model plot with dropout of 0.2
 Fig 2. Model plot without dropout
 
 
-#### Tensorflow model
-The tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run on gpu and [speech_emotion_gpu_multi](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallely on multiple gpus.
+### Tensorflow model
+The tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
 
 
 
