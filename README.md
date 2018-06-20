@@ -36,7 +36,6 @@ Fig 2. Model plot without dropout
 ### Tensorflow model
 Tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
 
-
-
-
+#### Model input dataset can be downloaded from the [link](https://drive.google.com/file/d/1QidPJVsdUnYXj0VAGIrffmDl3pjA6RLl/view?usp=sharing).
+It consists of the following features: F0 (pitch), voice probability, zero-crossing rate, 12-dimensional Mel-frequency cepstral coefficients (MFCC) with log energy, and their first time derivatives. The features have been taken from [this](https://www.microsoft.com/en-us/research/publication/high-level-feature-representation-using-recurrent-neural-network-for-speech-emotion-recognition/) paper.
 
