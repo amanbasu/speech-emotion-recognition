@@ -22,20 +22,9 @@ The model was trained for 500 epochs and after which the curve almost reached a 
 
 Adding dropout reduced the overfitting of the model and increased its overall accuracy. The model showed an unweighted accuracy across six emotions of 45% with the validation accuracy of 42%.
 
-Solarized dark             |  Solarized Ocean
+Dropout of 0.2             |  No Dropout
 :-------------------------:|:-------------------------:
 ![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_dropout.png)  |  ![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_no_dropout.png)
-
-
-
-
-Fig 1. Model plot with dropout of 0.2
-
-
-
-
-Fig 2. Model plot without dropout
-
 
 ### Tensorflow model
 Tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
