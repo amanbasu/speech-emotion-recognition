@@ -24,7 +24,7 @@ Adding dropout reduced the overfitting of the model and increased its overall ac
 
 Dropout of 0.2             |  No Dropout
 :-------------------------:|:-------------------------:
-![](https://github.com/amanbasu/speech-emotion-recognition/blob/master/plot_dropout.png)  |  ![](https://github.com/amanbasue/speech-emotion-recognition/blob/master/plot_no_dropout.png)
+![](https://github.com/amanbasu/speech-emotion-recognition/blob/master/plot_dropout.png)  |  ![](https://github.com/amanbasu/speech-emotion-recognition/blob/master/plot_no_dropout.png)
 
 ### Tensorflow model
 Tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/amanbasu/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/amanbasu/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
