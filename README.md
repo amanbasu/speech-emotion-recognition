@@ -7,7 +7,7 @@ In this project we will use Mel frequency cepstral coefficients (MFCC) to train 
 the link for the same can be found [here](http://sail.usc.edu/iemocap/)
 
 #### The dataset
-The IEMOCAP database consists of 10 emotions. We selected the major 6 emotions viz. angry, neutral, frustrated, sad, excited and happy, in our training set. Features extracted from the raw audio of all sessions were saved along with their length and emotion. We used the first 20 mfcc coefficients as the feature vector, the process can be found in [notebook](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/create_mfcc.ipynb)
+The IEMOCAP database consists of 10 emotions. We selected the major 6 emotions viz. angry, neutral, frustrated, sad, excited and happy, in our training set. Features extracted from the raw audio of all sessions were saved along with their length and emotion. We used the first 20 mfcc coefficients as the feature vector, the process can be found in [notebook](https://github.com/amanbasu/speech-emotion-recognition/blob/master/create_mfcc.ipynb)
 
 To convert data into a consistent shape we have applied Bucket Padding. The data is first sorted according to their sequence lengths and then divided into a specific number of buckets. The length of data thus divided is in close range of each other which eliminates extra padding. This method is used in Bucket Iterator which is used to get the batch if desired examples.
 
@@ -24,10 +24,10 @@ Adding dropout reduced the overfitting of the model and increased its overall ac
 
 Dropout of 0.2             |  No Dropout
 :-------------------------:|:-------------------------:
-![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_dropout.png)  |  ![](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/plot_no_dropout.png)
+![](https://github.com/amanbasu/speech-emotion-recognition/blob/master/plot_dropout.png)  |  ![](https://github.com/amanbasue/speech-emotion-recognition/blob/master/plot_no_dropout.png)
 
 ### Tensorflow model
-Tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/First-Of-His-Name/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
+Tensorflow implementation of the model has been added. The repository contains two files, [speech_emotion_gpu](https://github.com/amanbasu/speech-emotion-recognition/blob/master/speech_emotion_gpu.py) to run the model on gpu and [speech_emotion_gpu_multi](https://github.com/amanbasu/speech-emotion-recognition/blob/master/speech_emotion_gpu_multi.py) which makes the file run parallelly on multiple gpus.
 
 ### Input data for model can be downloaded from the [link](https://drive.google.com/file/d/1QidPJVsdUnYXj0VAGIrffmDl3pjA6RLl/view?usp=sharing).
 It consists of the following features: F0 (pitch), voice probability, zero-crossing rate, 12-dimensional Mel-frequency cepstral coefficients (MFCC) with log energy, and their first time derivatives. The features have been taken from [this](https://www.microsoft.com/en-us/research/publication/high-level-feature-representation-using-recurrent-neural-network-for-speech-emotion-recognition/) paper.
