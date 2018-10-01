@@ -1,5 +1,4 @@
-# speech-emotion-recognition
-Detecting human emotions using Deep Learning
+# Recognising Human Emotions From Raw Audio
 
 In this project we will use Mel frequency cepstral coefficients (MFCC) to train a recurrent neural network (LSTM) and classify human emotions into happy, sad, angry, frustrated, sad, neutral and fear categories.
 
