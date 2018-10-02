@@ -1,4 +1,5 @@
 # Recognising Human Emotions From Raw Audio
+(Collaborators: [Aman Agarwal](https://amanbasu.github.io), [Aditya Mishra](https://aditya985.github.io))
 
 In this project we will use Mel frequency cepstral coefficients (MFCC) to train a recurrent neural network (LSTM) and classify human emotions into happy, sad, angry, frustrated, sad, neutral and fear categories.
 
