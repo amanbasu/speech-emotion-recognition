@@ -1,4 +1,7 @@
 # Recognising Human Emotions From Raw Audio
+
+<img src="https://img.shields.io/github/stars/amanbasu/speech-emotion-recognition?color=0088ff"/> <img src="https://img.shields.io/github/forks/amanbasu/speech-emotion-recognition?color=ff8800"/> <img src="https://img.shields.io/github/issues-closed/amanbasu/speech-emotion-recognition?color=00ff00"/>
+
 Collaborator: [Aman Agarwal](https://amanbasu.github.io), [Aditya Mishra](https://aditya985.github.io)
 
 In this project we will use Mel frequency cepstral coefficients (MFCC) to train a recurrent neural network (LSTM) and classify human emotions into happy, sad, angry, frustrated, sad, neutral and fear categories.
